@@ -1,0 +1,892 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+  /** font-family: 'Roboto', sans-serif; **/
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  html {
+      font-size: 10px;
+  }
+
+  body {
+      background-color: #191919;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+  }
+
+  a {
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+
+  /**NAV BAR**/
+  .navbar {
+      background-color: #F58840;
+      height: 5.3rem;
+      border-bottom-left-radius: 10%;
+      border-bottom-right-radius: 10%;
+      box-shadow: 1px 3px 30px #19191985;
+  }
+
+  .offcanvas {
+      background-color: #F58840;
+  }
+
+  .offcanvas-title {
+      color: #eeee;
+      font-size: 3rem;
+  }
+
+  .menu-navegador ul {
+      list-style-type: none;
+      display: flex;
+  }
+
+  .menu-navegador ul li a {
+      color: #191919;
+      font-size: 2rem;
+      padding: 1rem;
+  }
+
+  .bruno {
+      font-weight: bold;
+      float: none;
+      left: 50%;
+      transform: translate(-50%, 0);
+      position: absolute;
+      font-size: 4rem;
+      color: #191919;
+      letter-spacing: 0.5rem;
+      transition: .5s;
+  }
+
+  .fa-brands {
+      font-size: 3.3rem;
+      margin-top: 1rem;
+      transition: .5s;
+  }
+
+  .nav__text {
+    transition: .3s;
+  }
+
+  .navbar__redes__off {
+    display: none;
+    visibility: hidden;
+  }
+
+  .container-fluid ul li .fa-facebook:hover {
+      color: #3b5999;
+      transform: translateY(3px) scale(1.3);
+  }
+
+  .container-fluid ul li .fa-instagram:hover {
+      color: #e4405f;
+      transform: translateY(3px) scale(1.3);
+  }
+
+  .container-fluid ul li .fa-spotify:hover {
+      color: #138a3d;
+      transform: translateY(3px) scale(1.3);
+  }
+
+  .container-fluid ul li .fa-youtube:hover {
+      color: #c4302b;
+      transform: translateY(3px) scale(1.3);
+  }
+
+  .container-fluid ul li .fa-tiktok:hover {
+      color: black;
+      transform: translateY(3px) scale(1.3);
+  }
+
+  .nav__text:hover {
+      color: #eeee;
+  }
+
+  .bruno:hover {
+      color: #eeee;
+      font-size: 4.5rem;
+  }
+
+  .nav__text:active {
+      color: #B85252;
+  }
+
+  .bruno:active {
+      color: #B85252;
+  }
+
+  /** SECCION 1 PORTADA **/
+  .portada {
+      background-image: url(../images/Portada.jpg);
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+  .portada h1 {
+      text-align: center;
+      font-size: 11rem;
+      text-transform: uppercase;
+      color: #F58840;
+      padding-top: 100rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-shadow: 1px 1px 2px #191919;
+  }
+
+  /** SECCION 2 SOBRE MI **/
+  .about-me {
+      background-image: url(../images/Guitarra.jpg);
+      width: 100%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 15rem;
+  }
+
+  .about-me h2 {
+      text-align: center;
+      font-size: 4rem;
+      text-transform: uppercase;
+      padding-top: 15rem;
+      padding-bottom: 3rem;
+      color: #F58840;
+      letter-spacing: 0.5rem;
+  }
+
+  .about-me p {
+      font-size: 3rem;
+      text-align: center;
+      padding-right: 10%;
+      padding-left: 10%;
+      font-weight: bold;
+      color: #eeee;
+  }
+
+  /** SECCION 3 MUSICA **/
+  .my-music {
+      font-size: 4rem;
+      padding-top: 8rem;
+      padding-bottom: 2rem;
+      text-align: center;
+      color: #F58840;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+  }
+
+  .spotify-list {
+      display: flex;
+      justify-content: center;
+  }
+
+  .spotify-list iframe {
+      padding: 5rem 0rem 8rem 0rem;
+      width: 30%;
+      height: 65.5rem;
+  }
+
+  /** SECCION 4 PROYECTOS **/
+  .fondo-proyectos {
+      background-color: #161515;
+      text-align: center;
+      padding-bottom: 12rem;
+  }
+
+  .proyects {
+      font-size: 4rem;
+      text-transform: uppercase;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      text-align: center;
+      color: #F58840;
+      letter-spacing: 0.5rem;
+  }
+
+  .carousel iframe {
+      height: 70vh;
+      border-radius: 4%;
+      border: #eeee solid 2px;
+  }
+
+  .carousel-control-prev {
+      margin: 100px 0;
+  }
+
+  .carousel-control-next {
+      margin: 100px 0;
+  }
+
+  /** SECCION 5 GALERIA **/
+  .gallery {
+      font-size: 4rem;
+      text-transform: uppercase;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      text-align: center;
+      color: #F58840;
+      letter-spacing: 0.5rem;
+  }
+
+  .galeria {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+          'area1 area1 area1 area2 area2 area2'
+          'area1 area1 area1 area2 area2 area2'
+          'area3 area3 area4 area4 area5 area5'
+          'area3 area3 area4 area4 area5 area5'
+      ;
+      gap: 1.5rem;
+      align-items: center;
+      justify-items: center;
+      place-items: center;
+      padding: 1.5rem 5% 15rem 5%;
+  }
+
+  .galeria__foto {
+      width: 100%;
+      height: 43rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: .6s;
+  }
+
+  .galeria__foto img {
+      width: 100%;
+      height: 43rem;
+      object-fit: cover;
+      border-radius: 3%;
+      border: #eeee solid 0.5rem;
+  }
+
+  .foto1 {
+      grid-area: area1;
+  }
+
+  .foto2 {
+      grid-area: area2;
+  }
+
+  .foto3 {
+      grid-area: area3;
+  }
+
+  .foto4 {
+      grid-area: area4;
+  }
+
+  .foto5 {
+      grid-area: area5;
+  }
+
+  .galeria__foto:active {
+      width: 80%;
+      position: absolute;
+  }
+
+  .galeria__foto:active img {
+      width: 90%;
+      height: 67vh;
+      border-radius: 3%;
+      border: #F58840 solid 1rem;
+  }
+
+
+  /** SECCION 6 CONTACTO **/
+  .formulario {
+      background-image: url(../images/Fondo\ contacto\ BRUNO_CLEF_OSC.gif);
+      width: 100%;
+      height: 63rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+  .contact {
+      font-size: 5rem;
+      text-transform: uppercase;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      text-align: center;
+      color: #eeee;
+  }
+
+  .form--padding{
+    padding: 0 10rem;
+  }
+
+  .formulario label {
+      font-size: 2.5rem;
+      color: #eeee;
+      text-transform: uppercase;
+  }
+
+  .formulario__boton {
+      font-size: 3rem;
+      background-color: #afafafee;
+  }
+
+  .casilleros__arriba {
+    background-color: #138a3d00;
+    font-size: 2.5rem;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #eeee;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .casillero__abajo {
+    background-color: #138a3d00;
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #eeee;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  /*ZONA EXPERIMENTAL*/
+
+  .form--input input::placeholder{
+    color: #F58840;
+  }
+  .form--colorfondo input:-webkit-autofill{ box-shadow: 0 0 0px 1000px #F58840 inset; }
+
+
+  .formulario--flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /** FOOTER **/
+
+  footer {
+    margin-top: auto;
+    padding: 5rem;
+    background-color: black;
+  }
+
+
+  .footer {
+      color: #eeee;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+      font-size: 1.5rem;
+  }
+
+  .footer__name {
+      float: none;
+      left: 50%;
+      transform: translate(-50%, 0);
+      position: absolute;
+  }
+
+  .copy {
+      text-align: center;
+      color: #eeee;
+      font-size: 1.5rem;
+  }
+
+  /**Textos Paginas**/
+
+  .paginas-parrafo p {
+      font-size: 3rem;
+      text-align: justify;
+      padding-right: 36rem;
+      padding-left: 36rem;
+      font-weight: bold;
+      color: #B85252;
+      margin-bottom: 5rem;
+  }
+
+  /** MEET BRUNO **/
+
+  .meet-bruno-titulo {
+      background-image: url(../images/Fondo\ pag.jpg);
+      width: 100%;
+      height: 30rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+  .meet-bruno-titulo h2 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: #eeee;
+      padding-top: 15rem;
+      letter-spacing: 0.5rem;
+  }
+
+  .imagen-meet-bruno {
+      padding: 2rem;
+      text-align: center;
+  }
+
+  .imagen-meet-bruno img {
+      width: 120rem;
+      height: 80rem;
+      object-fit: cover;
+  }
+
+  /** MY MUSIC **/
+
+  .my-music-titulo {
+      background-image: url(../images/Fondo\ pag.jpg);
+      width: 100%;
+      height: 30rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+  .my-music-titulo h2 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: #eeee;
+      padding-top: 15rem;
+      letter-spacing: 0.5rem;
+  }
+
+  /** MY PROYECTS **/
+
+  .my-proyects-titulo {
+      background-image: url(../images/Fondo\ pag.jpg);
+      width: 100%;
+      height: 30rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+  .my-proyects-titulo h2 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: #eeee;
+      padding-top: 15rem;
+      letter-spacing: 0.5rem;
+  }
+
+  .proyects--margin {
+      margin-top: 8rem;
+  }
+
+  .parrafo-myproyects {
+      font-size: 3rem;
+      text-align: justify;
+      padding-right: 36rem;
+      padding-left: 36rem;
+      font-weight: bold;
+      color: #B85252;
+      padding-top: 8rem;
+      margin-bottom: 5rem;
+  }
+
+  /** CONTACT ME **/
+
+  .contact-me-titulo {
+      background-image: url(../images/Fondo\ pag.jpg);
+      width: 100%;
+      height: 30rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+  .contact-me-titulo h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #eeee;
+    padding-top: 15rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .formulario2 {
+    margin-top: 3rem;
+  }
+
+  .formulario2 label {
+    font-size: 2.5rem;
+    color: #eeee;
+    text-transform: uppercase;
+}
+
+  .casilleros__arriba2 {
+    background-color: #F58840;
+    font-size: 2.5rem;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #eeee;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .casillero__abajo2 {
+    background-color: #F58840;
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #eeee;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .form--input2 input::placeholder{
+    color: #eeee;
+  }
+
+  .info__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .contact-me__info {
+    margin-top: 10rem;
+  }
+
+.contact-me-redes {
+    display: flex;
+    justify-content: left;
+}
+
+.contact-me-redes div h3 {
+    font-size: 3.5rem;
+    color: #F58840;
+}
+
+.contacto__redes {
+    list-style: none;
+    margin-left: -3.5rem;
+}
+
+.contacto__redes li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.contacto__redes li a{
+    color: #eeee;
+}
+
+.info {
+    color: #F58840;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    margin-bottom: 5rem;
+}
+
+.contact-me-texto h3 , h4{
+    font-size: 3.5rem;
+}
+
+.contacto__redes li a:hover {
+    color: #F58840;
+}
+
+
+/** MEDIA QUERYS**/
+
+  @media only screen and (max-width:1921px) {
+      .menu-navegador ul li a {
+          font-size: 1.7rem;
+      }
+
+      .portada h1 {
+          padding-top: 70rem;
+      }
+  }
+
+
+  @media only screen and (max-width:1515px) {
+    .menu-navegador ul li a {
+        font-size: 1.5rem;
+    }
+  }
+
+
+  @media only screen and (max-width:1399px) {
+    .navbar {
+        height: 6rem;
+      }
+      .menu-navegador ul li a {
+        font-size: 2rem;
+    }
+  }
+
+
+  @media only screen and (max-width:1281px) {
+
+      .portada h1 {
+          font-size: 8rem;
+          padding-top: 40rem;
+      }
+
+      .paginas-parrafo p {
+          padding-right: 5rem;
+          padding-left: 5rem;
+      }
+
+      .imagenes-fondo {
+          height: 25rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .imagenes-fondo h2 {
+          padding-top: 0px;
+      }
+
+
+      .imagen-meet-bruno img {
+          width: 100%;
+          height: 75rem;
+          object-fit: cover;
+      }
+
+      .parrafo-myproyects {
+          padding-right: 5rem;
+          padding-left: 5rem;
+      }
+
+      .imagenes-fondo h2 {
+          padding-top: 3rem;
+          font-size: 3.3rem;
+      }
+
+  .info__flex{
+    display: block;
+  }
+
+  .contact-me__info {
+    margin-top: 5rem;
+  }
+
+.contact-me-redes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-me-redes div h3 {
+    font-size: 3rem;
+    color: #F58840;
+}
+
+.contacto__redes li {
+    padding: 0 1rem;
+}
+
+.info {
+    color: #F58840;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-me-texto h3 , h4{
+    font-size: 3rem;
+}
+}
+
+
+  @media only screen and (max-width:992px) {
+
+      .footer__name {
+          position: relative;
+          left: 0%;
+          right: 0%;
+          transform: translate(0, 0);
+      }
+
+      .footer {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .galeria__foto {
+          cursor: auto;
+      }
+
+      .galeria__foto:active {
+          width: 100%;
+          height: 43rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: static;
+      }
+
+      .galeria__foto:active img {
+          width: 100%;
+          height: 43rem;
+          object-fit: cover;
+          border-radius: 3%;
+          border: #eeee solid 0.5rem;
+      }
+
+      .formulario--flex{
+        display: inline-block;
+      }
+
+      .form--padding{
+        text-align: center;
+        padding: 0 0;
+      }
+
+      .formulario {
+        height: 80rem;
+      }
+
+      .navbar {
+        height: 5.3rem;
+    }
+
+    .bruno {
+        font-size: 3rem;
+        letter-spacing: 0rem;
+    }
+  
+    .fa-brands {
+        font-size: 2.5rem;
+    }
+
+    .bruno:hover {
+        font-size: 4rem;
+    }
+  }
+
+
+  @media only screen and (max-width:750px) {
+
+      .portada {
+          min-height: 100vh;
+          max-height: 100%;
+      }
+
+      .portada h1 {
+          font-size: 5.5rem;
+          padding-top: 65rem;
+      }
+
+      .galeria {
+          display: block;
+          padding-bottom: 10rem;
+      }
+
+      .galeria__foto {
+        margin-bottom: 2rem;
+      }
+
+      .spotify-list iframe {
+          width: 75%;
+      }
+
+      .video-galeria iframe {
+          height: 45rem;
+          width: 100%;
+          border-radius: 4%;
+          border: #eeee solid 2px;
+      }
+
+      .paginas-parrafo p {
+          font-size: 2.2rem;
+          padding-right: 3rem;
+          padding-left: 3rem;
+          text-align: left;
+      }
+
+      .parrafo-myproyects {
+          font-size: 2.2rem;
+          padding-right: 3rem;
+          padding-left: 3rem;
+          text-align: left;
+          padding-bottom: 0rem;
+      }
+
+      .imagenes-fondo {
+          height: 20rem;
+      }
+
+      .formulario {
+        height: 85rem;
+      }
+
+      .imagen-meet-bruno img {
+        object-fit: cover;
+    }
+
+    .redes-container {
+        display: none;
+        visibility: hidden;
+    }
+
+    .navbar__redes__off {
+        visibility: visible;
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    .redes__on {
+        font-size: 3.3rem;
+    }
+
+
+    .bruno:hover {
+        font-size: 3rem;
+    }
+  }
+
+
+  @media only screen and (max-width:370px) {
+    .bruno{
+        font-size: 2.3rem;
+    }
+  }
