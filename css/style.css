@@ -134,13 +134,17 @@
   }
 
   .portada h1 {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
       text-align: center;
       font-size: 11rem;
       text-transform: uppercase;
       color: #F58840;
-      padding-top: 100rem;
       padding-left: 1rem;
       padding-right: 1rem;
+      padding-bottom: 20rem;
       text-shadow: 1px 1px 2px #191919;
   }
 
@@ -634,10 +638,6 @@
       .menu-navegador ul li a {
           font-size: 1.7rem;
       }
-
-      .portada h1 {
-          padding-top: 70rem;
-      }
   }
 
 
@@ -662,7 +662,6 @@
 
       .portada h1 {
           font-size: 8rem;
-          padding-top: 40rem;
       }
 
       .paginas-parrafo p {
@@ -813,7 +812,6 @@
 
       .portada h1 {
           font-size: 5.5rem;
-          padding-top: 65rem;
       }
 
       .galeria {
@@ -885,8 +883,20 @@
   }
 
 
-  @media only screen and (max-width:370px) {
+  @media only screen and (max-width:541px) {
+  .portada h1 {
+    font-size: 5rem;
+}
+}
+
+
+  @media only screen and (max-width:376px) {
     .bruno{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
+
+.navbar-toggler {
+    position: absolute;
+    right: 1rem;
+}
   }
