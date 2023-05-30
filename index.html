@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <nav class="menu-navegador navbar fixed-top navbar-expand-xxl">
+        <nav class="navbar fixed-top navbar-expand-xxl">
             <div class="container-fluid">
                 <ul class="redes-container">
                     <li>
@@ -118,7 +118,7 @@
         <section>
             <div class="about-me">
                 <h2>I'm Bruno</h2>
-                <p class="container my-5">
+                <p class="container">
                     I love creating songs, working on beats, understanding the music production.
                     Contact me for your online music project
                     or if you already have the tracks of your song, let's mix and master it!</p>
@@ -138,7 +138,7 @@
             </div>
         </section>
 
-        <!--Sección MyProyects--> <!--width="560" height="315"-->
+        <!--Sección MyProyects-->
 
         <section class="fondo-proyectos">
             <h2 class="proyects">proyects</h2>
@@ -175,10 +175,10 @@
                     </div>
 
                     <div class="carousel-item">
-                    <iframe class="d-block w-100" src="https://www.youtube.com/embed/2br2_E3eh1E"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        <iframe class="d-block w-100" src="https://www.youtube.com/embed/2br2_E3eh1E"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
 
                     <div class="carousel-item">
@@ -201,12 +201,11 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
-
-
         </section>
 
+
         <!--Sección Gallery-->
+
 
         <h2 class="gallery">Gallery</h2>
 
@@ -232,10 +231,12 @@
             </div>
         </section>
 
+
         <!--Sección Contact-->
 
+
         <section class="formulario">
-            <h2 class="contact">Send me a message</h2>
+            <h2>Send me a message</h2>
 
             <form class="container form--padding form--colorfondo form--input" action="" method="post"
                 enctype="text/plain">
@@ -265,7 +266,7 @@
                 </div>
 
                 <div class="d-flex justify-content-end">
-                    <button type="button" class="formulario__boton btn btn-dark">SEND</button>
+                    <button type="button" class="btn btn-dark">SEND</button>
                 </div>
             </form>
         </section>
@@ -289,26 +290,26 @@
     <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
 
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var gcaMain = new GetChatApp({
-        'mobileNumber' : '+5492616091266',
-        'titleMessage' : '👋 Chat with me on WhatsApp!',
-        'welcomeMessage': 'Hey there!🙌<br /> <br /> Get in touch with me by typing a message here. It will go straight to my phone! 🔥<br /> <br /> Lets make some music',
-        'position' : 'right',
-        'platforms' : {
-            'whatsapp' : true,
-            'facebook' : false,
-            'email' : false,
-            'instagram' : false,
-            'telegram' : false,
-        },
-        'facebookPageId' : '',
-        'gcaEmailAddress' : '',
-        'gcaEmailSubject' : '',
-        'gcaInstagramUsername' : '',
-        'gcaTelegramUsername' : '',
-      });
-    });
+        document.addEventListener("DOMContentLoaded", function () {
+            var gcaMain = new GetChatApp({
+                'mobileNumber': '+5492616091266',
+                'titleMessage': '👋 Chat with me on WhatsApp!',
+                'welcomeMessage': 'Hey there!🙌<br /> <br /> Get in touch with me by typing a message here. It will go straight to my phone! 🔥<br /> <br /> Lets make some music',
+                'position': 'right',
+                'platforms': {
+                    'whatsapp': true,
+                    'facebook': false,
+                    'email': false,
+                    'instagram': false,
+                    'telegram': false,
+                },
+                'facebookPageId': '',
+                'gcaEmailAddress': '',
+                'gcaEmailSubject': '',
+                'gcaInstagramUsername': '',
+                'gcaTelegramUsername': '',
+            });
+        });
     </script>
 
 </body>

@@ -1,0 +1,28 @@
+footer {
+    margin-top: auto;
+    padding: 5rem;
+    background-color: black;
+
+    .footer {
+        color: #eeee;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.5rem;
+
+        .footer__name {
+            float: none;
+            left: 50%;
+            transform: translate(-50%, 0);
+            position: absolute;
+        }
+    }
+
+    .copy {
+        text-align: center;
+        color: #eeee;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,301 @@
+@media only screen and (max-width:1399px) {
+    .navbar {
+        height: 6rem;
+
+        ul li a {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width:1281px) {
+
+    .portada h1 {
+        font-size: 8rem;
+    }
+
+    .imagenes-fondo {
+        height: 15rem;
+
+        h2 {
+            padding-top: 5rem;
+            font-size: 3.3rem;
+        }
+    }
+
+    .imagen-meet-bruno img {
+        width: 100%;
+        height: 75rem;
+    }
+
+    .contact-me__info {
+        margin-top: 5rem;
+        display: block;
+
+        .contact-me-redes {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 4rem;
+
+            div h3 {
+                font-size: 3rem;
+            }
+        }
+
+        .contacto__redes li {
+            padding: 0 1rem;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .contact-me-texto h3,
+        h4 {
+            font-size: 3rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width:992px) {
+
+    .navbar {
+        height: 5.3rem;
+
+        ul {
+            .fa-brands {
+                font-size: 2.5rem;
+            }
+        }
+
+        .bruno {
+            font-size: 3rem;
+            letter-spacing: 0rem;
+
+            &:hover {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    footer {
+        .footer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .footer__name {
+                position: relative;
+                left: 0%;
+                right: 0%;
+                transform: translate(0, 0);
+            }
+        }
+    }
+
+    .imagenes-fondo {
+        height: 13rem;
+
+        h2 {
+            padding-top: 5.5rem;
+            font-size: 2.8rem;
+        }
+    }
+
+    .galeria {
+        .galeria__foto {
+            cursor: auto;
+
+            &:active {
+                width: 100%;
+                height: 43rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: static;
+            }
+
+            &:active img {
+                width: 100%;
+                height: 43rem;
+                object-fit: cover;
+                border-radius: 3%;
+                border: #eeee solid 0.5rem;
+            }
+        }
+    }
+
+
+    .formulario2 {
+        form {
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .formulario--flex {
+            display: inline-block;
+        }
+    }
+
+
+    .formulario {
+        height: 80rem;
+        text-align: center;
+
+        form {
+            padding: 0 1rem;
+            .formulario--flex {
+            display: inline-block;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:750px) {
+
+    .paginas-parrafo p {
+        font-size: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        text-align: left;
+    }
+
+    .navbar {
+        .redes-container {
+            display: none;
+            visibility: hidden;
+        }
+
+        .bruno:hover {
+            font-size: 3rem;
+        }
+
+        .navbar-toggler {
+            position: absolute;
+            right: 1rem;
+        }
+
+        .offcanvas {
+            background-color: $main-color;
+
+            .offcanvas-title {
+                color: #eeee;
+                font-size: 3rem;
+            }
+
+            .nav__text {
+                transition: .3s;
+            }
+
+            .navbar__redes__off {
+                visibility: visible;
+                display: flex;
+                margin-top: 1rem;
+
+                .redes__on {
+                    font-size: 3.3rem;
+                }
+            }
+        }
+    }
+
+    .portada {
+        min-height: 100vh;
+        max-height: 100%;
+
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
+    .about-me {
+        padding: 5rem 0;
+        p {
+            font-size: 2rem;
+            padding: 0 2rem;
+        }
+    }
+
+
+    .fondo-proyectos {
+        padding-bottom: 9rem;
+
+        .proyects {
+            padding: 3rem 0;
+        }
+    }
+
+    .my-music,
+    .proyects,
+    .gallery {
+        padding: 3rem 0;
+    }
+
+
+    .galeria {
+        display: block;
+        padding-bottom: 7rem;
+
+        .galeria__foto {
+            margin-bottom: 2rem;
+        }
+    }
+
+
+    .spotify-list iframe {
+        width: 75%;
+    }
+
+    .formulario {
+        height: 85rem;
+    }
+
+    .imagenes-fondo {
+        height: 13rem;
+
+        h2 {
+            padding-top: 5.8rem;
+            font-size: 2.5rem;
+        }
+    }
+
+
+    .imagen-meet-bruno {
+        padding: 1rem;
+
+        img {
+            height: 60vh;
+        }
+    }
+
+    .info {
+        .contact-me-texto h4 {
+            padding: 1rem 0;
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width:376px) {
+    .navbar {
+        .bruno {
+            font-size: 2rem;
+
+            &:hover {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .contact-me-texto h4 {
+        font-size: 2rem;
+    }
+}
