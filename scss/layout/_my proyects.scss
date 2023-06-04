@@ -1,21 +1,23 @@
 .imagenes-fondo {
-    background-image: url("../images/Fondo\ pag.jpg");
+    background-image: url("../images/fondo pag.jpg");
     width: 100%;
     height: 20rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+    @include flexbox (column, center, center);
 
-    h2 {
-        font-size: 4rem;
-        text-transform: uppercase;
-        text-align: center;
-        color: #eeee;
+    h1 {
+        @include titulos (#eeee, 4rem, center, uppercase, 0.5rem);
         padding-top: 5rem;
-        letter-spacing: 0.5rem;
+    }
+}
+
+.forza {
+    iframe {
+        height: 70vh;
+        border-radius: 4%;
+        border: #eeee solid 2px;
     }
 }

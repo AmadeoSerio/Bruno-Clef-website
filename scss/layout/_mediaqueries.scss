@@ -13,6 +13,7 @@
 
     .portada h1 {
         font-size: 8rem;
+        padding-bottom: 8rem;
     }
 
     .imagenes-fondo {
@@ -36,11 +37,13 @@
         .contact-me-redes {
             display: flex;
             flex-direction: column;
-            text-align: center;
+            align-items: center;
             margin-bottom: 4rem;
+            text-align: center;
 
-            div h3 {
+            div p {
                 font-size: 3rem;
+                text-align: center;
             }
         }
 
@@ -52,11 +55,13 @@
     .info {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
 
-        .contact-me-texto h3,
-        h4 {
+
+        .contact-me-texto p,
+        .email {
             font-size: 3rem;
+            text-align: center;
         }
     }
 }
@@ -183,7 +188,6 @@
         }
 
         .offcanvas {
-            background-color: $main-color;
 
             .offcanvas-title {
                 color: #eeee;
@@ -212,6 +216,7 @@
 
         h1 {
             font-size: 5rem;
+            padding-bottom: 8rem;
         }
     }
 
@@ -276,7 +281,7 @@
     }
 
     .info {
-        .contact-me-texto h4 {
+        .contact-me-texto p {
             padding: 1rem 0;
             font-size: 2rem;
         }
@@ -295,7 +300,7 @@
         }
     }
 
-    .contact-me-texto h4 {
+    .contact-me-texto p {
         font-size: 2rem;
     }
 }

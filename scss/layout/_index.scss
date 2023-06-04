@@ -1,32 +1,40 @@
 /** SECCION 1 PORTADA **/
 .portada {
-    background-image: url("../images/Portada\ Bruno.png");
+    background: linear-gradient(to top, #000000be, #00000000), url("../images/portada bruno.jpg");
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-y: top;
+    background-position-x: center;
     background-size: cover;
 
     h1 {
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        text-align: center;
-        font-size: 11rem;
-        text-transform: uppercase;
-        color: $main-color;
+
+        @include flexbox (column, end, center);
+        font-weight: bolder;
+
+        @include titulos (transparent, 11rem, center, uppercase, 0);
+        background: linear-gradient(to left, #7920ff, #ff33cc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 20rem;
-        text-shadow: 1px 1px 2px #191919;
+
+        animation-name: titulo-animado;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        transform: translateY(0);
     }
 }
 
 
 /** SECCION 2 SOBRE MI **/
 .about-me {
-    background-image: url("../images/Guitarra.jpg");
+    background-image: url("../images/guitarra.jpg");
     width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -35,12 +43,11 @@
     padding: 15rem;
 
     h2 {
-        text-align: center;
-        font-size: 4rem;
-        text-transform: uppercase;
+        @include titulos (transparent, 4rem, center, uppercase, 0.5rem);
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: $gradiente;
         padding-bottom: 3rem;
-        color: $main-color;
-        letter-spacing: 0.5rem;
     }
 
     p {
@@ -56,17 +63,15 @@
 
 /** SECCION 3 MUSICA **/
 .my-music {
-    font-size: 4rem;
+    @include titulos (transparent, 4rem, center, uppercase, 0.5rem);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: $gradiente;
     padding: 5rem 0;
-    text-align: center;
-    color: $main-color;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
 }
 
 .spotify-list {
-    display: flex;
-    justify-content: center;
+    @include flexbox (column, center, center);
 
     iframe {
         padding-bottom: 5rem;
@@ -83,12 +88,11 @@
     padding-bottom: 12rem;
 
     .proyects {
-        font-size: 4rem;
-        text-transform: uppercase;
+        @include titulos (transparent, 4rem, center, uppercase, 0.5rem);
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: $gradiente;
         padding: 5rem 0;
-        text-align: center;
-        color: $main-color;
-        letter-spacing: 0.5rem;
     }
 }
 
@@ -112,12 +116,11 @@
 
 /** SECCION 5 GALERIA **/
 .gallery {
-    font-size: 4rem;
-    text-transform: uppercase;
+    @include titulos (transparent, 4rem, center, uppercase, 0.5rem);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: $gradiente;
     padding: 5rem 0;
-    text-align: center;
-    color: $main-color;
-    letter-spacing: 0.5rem;
 }
 
 .galeria {
@@ -157,13 +160,12 @@
     }
 
     .galeria__foto {
+        @include flexbox (row, center, center);
+
         width: 100%;
         height: 43rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         cursor: pointer;
-        transition: .6s;
+
 
         &:active {
             width: 80%;
@@ -171,15 +173,20 @@
         }
 
         img {
-            width: 100%;
-            height: 43rem;
-            object-fit: cover;
+            @include imagenes (100%, 43rem, cover);
             border-radius: 3%;
             border: #eeee solid 0.5rem;
+            transition: 0.7s;
+            z-index: .1;
+
+            &:hover {
+                width: 98.5%;
+                height: 42rem;
+            }
 
             &:active {
                 width: 90%;
-                height: 67vh;
+                height: 85vh;
                 border-radius: 3%;
                 border: $main-color solid 1rem;
             }
@@ -190,19 +197,16 @@
 
 /** SECCION 6 CONTACTO **/
 .formulario {
-    background-image: url("../images/Fondo\ contacto\ BRUNO_CLEF_OSC.gif");
+    background-image: url("../images/fondo contacto.gif");
     width: 100%;
     height: 63rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    h2 {
-        font-size: 5rem;
-        text-transform: uppercase;
+    h6 {
+        @include titulos (#eeee, 4rem, center, uppercase, 0);
         padding: 5rem 0;
-        text-align: center;
-        color: #eeee;
     }
 
     form {
@@ -239,8 +243,7 @@
         }
 
         .formulario--flex {
-            display: flex;
-            justify-content: space-between;
+            @include flexbox (row, space-between, center);
         }
     }
 

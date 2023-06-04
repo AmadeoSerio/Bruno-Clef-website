@@ -1,0 +1,44 @@
+@mixin flexbox ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin imagenes ($width, $height, $object) {
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}
+
+@mixin titulos ($color, $size, $align, $transform, $spacing) {
+    color: $color;
+    font-size: $size;
+    text-align: $align;
+    text-transform: $transform;
+    letter-spacing: $spacing;
+}
+
+@keyframes titulo-animado {
+    0% {
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes iframe-animado {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -26,11 +26,31 @@ p {
   font-size: 3rem;
   text-align: justify;
   font-weight: bold;
-  color: #B85252;
+  color: #ccb979;
 }
 
+@keyframes titulo-animado {
+  0% {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes iframe-animado {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .navbar {
-  background-color: #F58840;
+  background: linear-gradient(to right, #6600ff, #ff33cc);
   height: 5.3rem;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
@@ -46,7 +66,7 @@ p {
   transition: 0.5s;
 }
 .navbar ul li .fa-facebook:hover {
-  color: #3b5999;
+  color: #2c86d4;
   transform: translateY(3px) scale(1.3);
 }
 .navbar ul li .fa-instagram:hover {
@@ -54,11 +74,11 @@ p {
   transform: translateY(3px) scale(1.3);
 }
 .navbar ul li .fa-spotify:hover {
-  color: #138a3d;
+  color: #51A67B;
   transform: translateY(3px) scale(1.3);
 }
 .navbar ul li .fa-youtube:hover {
-  color: #c4302b;
+  color: #861f1c;
   transform: translateY(3px) scale(1.3);
 }
 .navbar ul li .fa-tiktok:hover {
@@ -86,16 +106,18 @@ p {
   font-size: 4.5rem;
 }
 .navbar .bruno:active {
-  color: #B85252;
+  color: #ccb979;
 }
 .navbar .offcanvas {
-  background-color: #F58840;
+  background-color: #191919;
+  border: 0;
 }
 .navbar .offcanvas .offcanvas-title {
-  color: rgba(238, 238, 238, 0.9333333333);
+  color: #C7289F;
   font-size: 3rem;
 }
 .navbar .offcanvas .nav__text {
+  color: rgba(238, 238, 238, 0.9333333333);
   transition: 0.3s;
 }
 .navbar .offcanvas .navbar__redes__off {
@@ -108,7 +130,7 @@ p {
   transition: 0.5s;
 }
 .navbar .offcanvas .navbar__redes__off .fa-facebook:hover {
-  color: #3b5999;
+  color: #2c86d4;
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .navbar__redes__off .fa-instagram:hover {
@@ -116,11 +138,11 @@ p {
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .navbar__redes__off .fa-spotify:hover {
-  color: #138a3d;
+  color: #51A67B;
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .navbar__redes__off .fa-youtube:hover {
-  color: #c4302b;
+  color: #861f1c;
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .navbar__redes__off .fa-tiktok:hover {
@@ -128,10 +150,10 @@ p {
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .nav__text:hover {
-  color: rgba(238, 238, 238, 0.9333333333);
+  color: #ccb979;
 }
 .navbar .offcanvas .nav__text:active {
-  color: #B85252;
+  color: #682368;
 }
 
 footer {
@@ -140,12 +162,14 @@ footer {
   background-color: black;
 }
 footer .footer {
-  color: rgba(238, 238, 238, 0.9333333333);
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
+}
+footer .footer p {
+  color: rgba(238, 238, 238, 0.9333333333);
   font-size: 1.5rem;
 }
 footer .footer .footer__name {
@@ -162,11 +186,12 @@ footer .copy {
 
 /** SECCION 1 PORTADA **/
 .portada {
-  background-image: url("../images/Portada Bruno.png");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7450980392), rgba(0, 0, 0, 0)), url("../images/portada bruno.jpg");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: top;
+  background-position-x: center;
   background-size: cover;
 }
 .portada h1 {
@@ -174,19 +199,29 @@ footer .copy {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  text-align: center;
+  align-items: center;
+  font-weight: bolder;
+  color: transparent;
   font-size: 11rem;
+  text-align: center;
   text-transform: uppercase;
-  color: #F58840;
+  letter-spacing: 0;
+  background: linear-gradient(to left, #7920ff, #ff33cc);
+  background-clip: text;
+  -webkit-background-clip: text;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 20rem;
-  text-shadow: 1px 1px 2px #191919;
+  animation-name: titulo-animado;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  transform: translateY(0);
 }
 
 /** SECCION 2 SOBRE MI **/
 .about-me {
-  background-image: url("../images/Guitarra.jpg");
+  background-image: url("../images/guitarra.jpg");
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -195,12 +230,15 @@ footer .copy {
   padding: 15rem;
 }
 .about-me h2 {
-  text-align: center;
+  color: transparent;
   font-size: 4rem;
+  text-align: center;
   text-transform: uppercase;
-  padding-bottom: 3rem;
-  color: #F58840;
   letter-spacing: 0.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #6600ff, #ff33cc);
+  padding-bottom: 3rem;
 }
 .about-me p {
   font-size: 3rem;
@@ -213,17 +251,22 @@ footer .copy {
 
 /** SECCION 3 MUSICA **/
 .my-music {
+  color: transparent;
   font-size: 4rem;
-  padding: 5rem 0;
   text-align: center;
-  color: #F58840;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #6600ff, #ff33cc);
+  padding: 5rem 0;
 }
 
 .spotify-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .spotify-list iframe {
   padding-bottom: 5rem;
@@ -238,12 +281,15 @@ footer .copy {
   padding-bottom: 12rem;
 }
 .fondo-proyectos .proyects {
+  color: transparent;
   font-size: 4rem;
-  text-transform: uppercase;
-  padding: 5rem 0;
   text-align: center;
-  color: #F58840;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #6600ff, #ff33cc);
+  padding: 5rem 0;
 }
 
 .carousel iframe {
@@ -260,12 +306,15 @@ footer .copy {
 
 /** SECCION 5 GALERIA **/
 .gallery {
+  color: transparent;
   font-size: 4rem;
-  text-transform: uppercase;
-  padding: 5rem 0;
   text-align: center;
-  color: #F58840;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #6600ff, #ff33cc);
+  padding: 5rem 0;
 }
 
 .galeria {
@@ -295,13 +344,13 @@ footer .copy {
   grid-area: area5;
 }
 .galeria .galeria__foto {
-  width: 100%;
-  height: 43rem;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 43rem;
   cursor: pointer;
-  transition: 0.6s;
 }
 .galeria .galeria__foto:active {
   width: 80%;
@@ -313,29 +362,36 @@ footer .copy {
   object-fit: cover;
   border-radius: 3%;
   border: rgba(238, 238, 238, 0.9333333333) solid 0.5rem;
+  transition: 0.7s;
+  z-index: 0.1;
+}
+.galeria .galeria__foto img:hover {
+  width: 98.5%;
+  height: 42rem;
 }
 .galeria .galeria__foto img:active {
   width: 90%;
-  height: 67vh;
+  height: 85vh;
   border-radius: 3%;
-  border: #F58840 solid 1rem;
+  border: #C7289F solid 1rem;
 }
 
 /** SECCION 6 CONTACTO **/
 .formulario {
-  background-image: url("../images/Fondo contacto BRUNO_CLEF_OSC.gif");
+  background-image: url("../images/fondo contacto.gif");
   width: 100%;
   height: 63rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.formulario h2 {
-  font-size: 5rem;
-  text-transform: uppercase;
-  padding: 5rem 0;
-  text-align: center;
+.formulario h6 {
   color: rgba(238, 238, 238, 0.9333333333);
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  padding: 5rem 0;
 }
 .formulario form {
   padding: 0 10rem;
@@ -370,7 +426,9 @@ footer .copy {
 }
 .formulario form .formulario--flex {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .formulario label {
   font-size: 2.5rem;
@@ -382,7 +440,7 @@ footer .copy {
   background-color: rgba(175, 175, 175, 0.9333333333);
 }
 .formulario .form--input input::placeholder {
-  color: #F58840;
+  color: #C7289F;
 }
 .formulario input:-webkit-autofill {
   -webkit-text-fill-color: rgba(238, 238, 238, 0.9333333333);
@@ -391,7 +449,7 @@ footer .copy {
 }
 
 .imagenes-fondo {
-  background-image: url("../images/Fondo pag.jpg");
+  background-image: url("../images/fondo pag.jpg");
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -402,13 +460,13 @@ footer .copy {
   justify-content: center;
   align-items: center;
 }
-.imagenes-fondo h2 {
-  font-size: 4rem;
-  text-transform: uppercase;
-  text-align: center;
+.imagenes-fondo h1 {
   color: rgba(238, 238, 238, 0.9333333333);
-  padding-top: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
+  padding-top: 5rem;
 }
 
 .imagen-meet-bruno {
@@ -416,12 +474,13 @@ footer .copy {
   text-align: center;
 }
 .imagen-meet-bruno img {
+  width: auto;
   height: 70vh;
   object-fit: cover;
 }
 
 .imagenes-fondo {
-  background-image: url("../images/Fondo pag.jpg");
+  background-image: url("../images/fondo pag.jpg");
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -432,17 +491,25 @@ footer .copy {
   justify-content: center;
   align-items: center;
 }
-.imagenes-fondo h2 {
-  font-size: 4rem;
-  text-transform: uppercase;
-  text-align: center;
+.imagenes-fondo h1 {
   color: rgba(238, 238, 238, 0.9333333333);
-  padding-top: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
+  padding-top: 5rem;
+}
+
+.spotify-list {
+  animation-name: iframe-animado;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  transform: translateX(0);
 }
 
 .imagenes-fondo {
-  background-image: url("../images/Fondo pag.jpg");
+  background-image: url("../images/fondo pag.jpg");
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -453,17 +520,23 @@ footer .copy {
   justify-content: center;
   align-items: center;
 }
-.imagenes-fondo h2 {
-  font-size: 4rem;
-  text-transform: uppercase;
-  text-align: center;
+.imagenes-fondo h1 {
   color: rgba(238, 238, 238, 0.9333333333);
-  padding-top: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
+  padding-top: 5rem;
+}
+
+.forza iframe {
+  height: 70vh;
+  border-radius: 4%;
+  border: rgba(238, 238, 238, 0.9333333333) solid 2px;
 }
 
 .imagenes-fondo {
-  background-image: url("../images/Fondo pag.jpg");
+  background-image: url("../images/fondo pag.jpg");
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -474,13 +547,13 @@ footer .copy {
   justify-content: center;
   align-items: center;
 }
-.imagenes-fondo h2 {
-  font-size: 4rem;
-  text-transform: uppercase;
-  text-align: center;
+.imagenes-fondo h1 {
   color: rgba(238, 238, 238, 0.9333333333);
-  padding-top: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
+  padding-top: 5rem;
 }
 
 .formulario2 {
@@ -490,7 +563,7 @@ footer .copy {
   color: rgba(238, 238, 238, 0.9333333333);
 }
 .formulario2 .formulario--darktext input:-webkit-autofill {
-  -webkit-text-fill-color: #191919;
+  -webkit-text-fill-color: rgba(238, 238, 238, 0.9333333333);
   -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -500,32 +573,36 @@ footer .copy {
   text-transform: uppercase;
 }
 .formulario2 .casilleros__arriba2 {
-  background-color: #F58840;
+  background-color: #682368;
   font-size: 2.5rem;
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #191919;
+  color: rgba(238, 238, 238, 0.9333333333);
   background-clip: padding-box;
   border: var(--bs-border-width) solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .formulario2 .casillero__abajo2 {
-  background-color: #F58840;
+  background-color: #682368;
   font-size: 2rem;
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #191919;
+  color: rgba(238, 238, 238, 0.9333333333);
   background-clip: padding-box;
   border: var(--bs-border-width) solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.formulario2 .formulario--flex {
+  display: flex;
+  justify-content: space-between;
 }
 .formulario2 button {
   font-size: 3rem;
@@ -541,9 +618,9 @@ footer .copy {
   display: flex;
   justify-content: left;
 }
-.contact-me__info .contact-me-redes div h3 {
+.contact-me__info .contact-me-redes div p {
   font-size: 3.5rem;
-  color: #F58840;
+  color: #ccb979;
 }
 .contact-me__info .contacto__redes {
   list-style: none;
@@ -559,19 +636,21 @@ footer .copy {
   transition: 0.3s;
 }
 .contact-me__info .contacto__redes li a:hover {
-  color: #F58840;
+  color: #C7289F;
 }
 
 .info {
-  color: #F58840;
   display: flex;
+  flex-direction: row;
   justify-content: right;
+  align-items: flex-start;
   text-align: right;
   margin-bottom: 5rem;
 }
-.info .contact-me-texto h3,
-.info h4 {
+.info .contact-me-texto p,
+.info .email {
   font-size: 3.5rem;
+  color: #ccb979;
 }
 
 @media only screen and (max-width: 1399px) {
@@ -585,6 +664,7 @@ footer .copy {
 @media only screen and (max-width: 1281px) {
   .portada h1 {
     font-size: 8rem;
+    padding-bottom: 8rem;
   }
   .imagenes-fondo {
     height: 15rem;
@@ -604,11 +684,13 @@ footer .copy {
   .contact-me__info .contact-me-redes {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     margin-bottom: 4rem;
+    text-align: center;
   }
-  .contact-me__info .contact-me-redes div h3 {
+  .contact-me__info .contact-me-redes div p {
     font-size: 3rem;
+    text-align: center;
   }
   .contact-me__info .contacto__redes li {
     padding: 0 1rem;
@@ -616,11 +698,12 @@ footer .copy {
   .info {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
-  .info .contact-me-texto h3,
-  .info h4 {
+  .info .contact-me-texto p,
+  .info .email {
     font-size: 3rem;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -710,9 +793,6 @@ footer .copy {
     position: absolute;
     right: 1rem;
   }
-  .navbar .offcanvas {
-    background-color: #F58840;
-  }
   .navbar .offcanvas .offcanvas-title {
     color: rgba(238, 238, 238, 0.9333333333);
     font-size: 3rem;
@@ -734,6 +814,7 @@ footer .copy {
   }
   .portada h1 {
     font-size: 5rem;
+    padding-bottom: 8rem;
   }
   .about-me {
     padding: 5rem 0;
@@ -779,7 +860,7 @@ footer .copy {
   .imagen-meet-bruno img {
     height: 60vh;
   }
-  .info .contact-me-texto h4 {
+  .info .contact-me-texto p {
     padding: 1rem 0;
     font-size: 2rem;
   }
@@ -791,7 +872,7 @@ footer .copy {
   .navbar .bruno:hover {
     font-size: 2rem;
   }
-  .contact-me-texto h4 {
+  .contact-me-texto p {
     font-size: 2rem;
   }
 }

@@ -12,7 +12,7 @@ html {
 
 body {
     background-color: $background-color;
-    font-family: 'Roboto', sans-serif;
+    font-family: $main-font;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -27,5 +27,6 @@ p {
     font-size: 3rem;
     text-align: justify;
     font-weight: bold;
-    color: #B85252;
+    color: $secundary-color;
 }
+
