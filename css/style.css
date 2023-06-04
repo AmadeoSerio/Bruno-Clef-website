@@ -64,6 +64,7 @@ p {
   font-size: 3.3rem;
   margin-top: 1rem;
   transition: 0.5s;
+  color: rgba(238, 238, 238, 0.9333333333);
 }
 .navbar ul li .fa-facebook:hover {
   color: #2c86d4;
@@ -78,7 +79,7 @@ p {
   transform: translateY(3px) scale(1.3);
 }
 .navbar ul li .fa-youtube:hover {
-  color: #861f1c;
+  color: #e03731;
   transform: translateY(3px) scale(1.3);
 }
 .navbar ul li .fa-tiktok:hover {
@@ -129,24 +130,34 @@ p {
   margin-top: 1rem;
   transition: 0.5s;
 }
-.navbar .offcanvas .navbar__redes__off .fa-facebook:hover {
+.navbar .offcanvas .navbar__redes__off .fa-facebook {
   color: #2c86d4;
+}
+.navbar .offcanvas .navbar__redes__off .fa-instagram {
+  color: #e4405f;
+}
+.navbar .offcanvas .navbar__redes__off .fa-spotify {
+  color: #51A67B;
+}
+.navbar .offcanvas .navbar__redes__off .fa-youtube {
+  color: #861f1c;
+}
+.navbar .offcanvas .navbar__redes__off .fa-tiktok {
+  color: rgba(238, 238, 238, 0.9333333333);
+}
+.navbar .offcanvas .navbar__redes__off .fa-facebook:hover {
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .navbar__redes__off .fa-instagram:hover {
-  color: #e4405f;
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .navbar__redes__off .fa-spotify:hover {
-  color: #51A67B;
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .navbar__redes__off .fa-youtube:hover {
-  color: #861f1c;
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .navbar__redes__off .fa-tiktok:hover {
-  color: black;
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .nav__text:hover {
