@@ -154,7 +154,8 @@
         }
     }
 
-
+    .fondo-formulario{
+        padding: 0;
     .formulario {
         height: 80rem;
         text-align: center;
@@ -166,6 +167,7 @@
             }
         }
     }
+}
 }
 
 
@@ -265,9 +267,12 @@
         width: 75%;
     }
 
+    .fondo-formulario{
+        padding: 0;
     .formulario {
-        height: 85rem;
+        height: 68rem;
     }
+}
 
     .imagenes-fondo {
         height: 13rem;
@@ -309,5 +314,11 @@
 
     .contact-me-texto p {
         font-size: 2rem;
+    }
+}
+
+.imagenes-fondo {
+    h1 {
+        letter-spacing: 0;
     }
 }

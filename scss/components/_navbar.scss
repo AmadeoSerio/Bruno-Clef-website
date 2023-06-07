@@ -95,6 +95,9 @@
             display: none;
             visibility: hidden;
 
+
+            ul {
+
             .fa-brands {
                 font-size: 3.3rem;
                 margin-top: 1rem;
@@ -140,6 +143,7 @@
             .fa-tiktok:hover {
                 transform: translateY(3px) scale(1.3);
             }
+        }
 
         }
 

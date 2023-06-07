@@ -140,39 +140,39 @@ p {
   display: none;
   visibility: hidden;
 }
-.navbar .offcanvas .navbar__redes__off .fa-brands {
+.navbar .offcanvas .navbar__redes__off ul .fa-brands {
   font-size: 3.3rem;
   margin-top: 1rem;
   transition: 0.5s;
 }
-.navbar .offcanvas .navbar__redes__off .fa-facebook {
+.navbar .offcanvas .navbar__redes__off ul .fa-facebook {
   color: #2c86d4;
 }
-.navbar .offcanvas .navbar__redes__off .fa-instagram {
+.navbar .offcanvas .navbar__redes__off ul .fa-instagram {
   color: #e4405f;
 }
-.navbar .offcanvas .navbar__redes__off .fa-spotify {
+.navbar .offcanvas .navbar__redes__off ul .fa-spotify {
   color: #51A67B;
 }
-.navbar .offcanvas .navbar__redes__off .fa-youtube {
+.navbar .offcanvas .navbar__redes__off ul .fa-youtube {
   color: #861f1c;
 }
-.navbar .offcanvas .navbar__redes__off .fa-tiktok {
+.navbar .offcanvas .navbar__redes__off ul .fa-tiktok {
   color: rgba(238, 238, 238, 0.9333333333);
 }
-.navbar .offcanvas .navbar__redes__off .fa-facebook:hover {
+.navbar .offcanvas .navbar__redes__off ul .fa-facebook:hover {
   transform: translateY(3px) scale(1.3);
 }
-.navbar .offcanvas .navbar__redes__off .fa-instagram:hover {
+.navbar .offcanvas .navbar__redes__off ul .fa-instagram:hover {
   transform: translateY(3px) scale(1.3);
 }
-.navbar .offcanvas .navbar__redes__off .fa-spotify:hover {
+.navbar .offcanvas .navbar__redes__off ul .fa-spotify:hover {
   transform: translateY(3px) scale(1.3);
 }
-.navbar .offcanvas .navbar__redes__off .fa-youtube:hover {
+.navbar .offcanvas .navbar__redes__off ul .fa-youtube:hover {
   transform: translateY(3px) scale(1.3);
 }
-.navbar .offcanvas .navbar__redes__off .fa-tiktok:hover {
+.navbar .offcanvas .navbar__redes__off ul .fa-tiktok:hover {
   transform: translateY(3px) scale(1.3);
 }
 .navbar .offcanvas .nav__text:hover {
@@ -212,7 +212,7 @@ footer .copy {
 
 /** SECCION 1 PORTADA **/
 .portada {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7450980392), rgba(0, 0, 0, 0)), url("../images/portada-bruno.png");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7450980392), rgba(0, 0, 0, 0)), url("../images/portada-bruno.jpg");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -247,7 +247,7 @@ footer .copy {
 
 /** SECCION 2 SOBRE MI **/
 .about-me {
-  background-image: url("../images/guitarra.png");
+  background-image: url("../images/guitarra.jpg");
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -469,7 +469,7 @@ footer .copy {
 }
 
 .imagenes-fondo {
-  background-image: url("../images/fondo-pag.png");
+  background-image: url("../images/fondo-pag.jpg");
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -500,7 +500,7 @@ footer .copy {
 }
 
 .imagenes-fondo {
-  background-image: url("../images/fondo-pag.png");
+  background-image: url("../images/fondo-pag.jpg");
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -529,7 +529,7 @@ footer .copy {
 }
 
 .imagenes-fondo {
-  background-image: url("../images/fondo-pag.png");
+  background-image: url("../images/fondo-pag.jpg");
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -556,7 +556,7 @@ footer .copy {
 }
 
 .imagenes-fondo {
-  background-image: url("../images/fondo-pag.png");
+  background-image: url("../images/fondo-pag.jpg");
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -576,12 +576,17 @@ footer .copy {
   padding-top: 5rem;
 }
 
-.formulario {
+.fondo-formulario {
+  background-color: #000000;
+  padding: 5rem 0;
+}
+.fondo-formulario .formulario {
   background-image: url("../images/fondo-contacto.gif");
   background-position-y: bottom;
   background-position-x: center;
-  width: 100%;
-  height: 65rem;
+  width: 120rem;
+  height: 50rem;
+  padding: 0 3rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -590,7 +595,7 @@ footer .copy {
   justify-content: center;
   align-items: center;
 }
-.formulario form .casilleros__arriba {
+.fondo-formulario .formulario form .casilleros__arriba {
   background-color: rgba(19, 138, 61, 0);
   font-size: 2.5rem;
   display: block;
@@ -604,7 +609,7 @@ footer .copy {
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.formulario form .casillero__abajo {
+.fondo-formulario .formulario form .casillero__abajo {
   background-color: rgba(19, 138, 61, 0);
   font-size: 2rem;
   display: block;
@@ -618,25 +623,25 @@ footer .copy {
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.formulario form .formulario--flex {
+.fondo-formulario .formulario form .formulario--flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.formulario label {
+.fondo-formulario .formulario label {
   font-size: 2.5rem;
   color: rgba(238, 238, 238, 0.9333333333);
   text-transform: uppercase;
 }
-.formulario button {
+.fondo-formulario .formulario button {
   font-size: 3rem;
   background-color: rgba(175, 175, 175, 0.9333333333);
 }
-.formulario .form--input input::placeholder {
+.fondo-formulario .formulario .form--input input::placeholder {
   color: #C7289F;
 }
-.formulario input:-webkit-autofill {
+.fondo-formulario .formulario input:-webkit-autofill {
   -webkit-text-fill-color: rgba(238, 238, 238, 0.9333333333);
   -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
   transition: background-color 5000s ease-in-out 0s;
@@ -802,14 +807,17 @@ footer .copy {
   .formulario2 .formulario--flex {
     display: inline-block;
   }
-  .formulario {
+  .fondo-formulario {
+    padding: 0;
+  }
+  .fondo-formulario .formulario {
     height: 80rem;
     text-align: center;
   }
-  .formulario form {
+  .fondo-formulario .formulario form {
     padding: 0 1rem;
   }
-  .formulario form .formulario--flex {
+  .fondo-formulario .formulario form .formulario--flex {
     display: inline-block;
   }
 }
@@ -883,8 +891,11 @@ footer .copy {
   .spotify-list iframe {
     width: 75%;
   }
-  .formulario {
-    height: 85rem;
+  .fondo-formulario {
+    padding: 0;
+  }
+  .fondo-formulario .formulario {
+    height: 68rem;
   }
   .imagenes-fondo {
     height: 13rem;
@@ -914,6 +925,9 @@ footer .copy {
   .contact-me-texto p {
     font-size: 2rem;
   }
+}
+.imagenes-fondo h1 {
+  letter-spacing: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
