@@ -183,8 +183,8 @@
             }
 
             &:active {
-                width: 90%;
-                height: 85vh;
+                width: 80%;
+                height: 75vh;
                 border-radius: 3%;
                 border: $main-color solid 1rem;
             }
@@ -262,7 +262,13 @@
 
     button {
         font-size: 3rem;
-        background-color: #afafafee;
+        background-color: #ff33cc;
         margin-bottom: 5rem;
+        transition: .3s;
+
+        &:hover {
+            color: $secundary-color;
+            background-color: $main-color;
+        }
     }
 }

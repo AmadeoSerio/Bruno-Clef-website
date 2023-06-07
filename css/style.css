@@ -34,6 +34,7 @@ p {
   right: 0;
   position: fixed;
   padding-right: 2rem;
+  animation: logo-whatsapp 3s infinite linear;
 }
 .whatsapp-icon a {
   color: #33cc66;
@@ -62,6 +63,17 @@ p {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@keyframes logo-whatsapp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 .navbar {
@@ -395,18 +407,18 @@ footer .copy {
   height: 42.5gitrem;
 }
 .galeria .galeria__foto img:active {
-  width: 90%;
-  height: 85vh;
+  width: 80%;
+  height: 75vh;
   border-radius: 3%;
   border: #C7289F solid 1rem;
 }
 
 /** SECCION 6 CONTACTO **/
-.formulario2 {
+.formulario2, .formulario {
   margin-top: 3rem;
   background-color: #131313;
 }
-.formulario2 h6 {
+.formulario2 h6, .formulario h6 {
   color: transparent;
   font-size: 4rem;
   text-align: center;
@@ -417,20 +429,20 @@ footer .copy {
   background-image: linear-gradient(to right, #6600ff, #ff33cc);
   padding: 5rem 0;
 }
-.formulario2 .form--input2 input::placeholder {
+.formulario2 .form--input2 input::placeholder, .formulario .form--input2 input::placeholder {
   color: rgba(238, 238, 238, 0.9333333333);
 }
-.formulario2 .formulario--darktext input:-webkit-autofill {
+.formulario2 .formulario--darktext input:-webkit-autofill, .formulario .formulario--darktext input:-webkit-autofill {
   -webkit-text-fill-color: rgba(238, 238, 238, 0.9333333333);
   -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
-.formulario2 label {
+.formulario2 label, .formulario label {
   font-size: 2.5rem;
   color: rgba(238, 238, 238, 0.9333333333);
   text-transform: uppercase;
 }
-.formulario2 .casilleros__arriba2 {
+.formulario2 .casilleros__arriba2, .formulario .casilleros__arriba2 {
   background-color: #7920ff;
   background-image: linear-gradient(to right, #6600ff, #ff33cc);
   font-size: 2.5rem;
@@ -445,7 +457,7 @@ footer .copy {
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.formulario2 .casillero__abajo2 {
+.formulario2 .casillero__abajo2, .formulario .casillero__abajo2 {
   background-color: #7920ff;
   background-image: linear-gradient(to right, #6600ff, #ff33cc);
   font-size: 2rem;
@@ -460,14 +472,19 @@ footer .copy {
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.formulario2 .formulario--flex {
+.formulario2 .formulario--flex, .formulario .formulario--flex {
   display: flex;
   justify-content: space-between;
 }
-.formulario2 button {
+.formulario2 button, .formulario button {
   font-size: 3rem;
-  background-color: rgba(175, 175, 175, 0.9333333333);
+  background-color: #ff33cc;
   margin-bottom: 5rem;
+  transition: 0.3s;
+}
+.formulario2 button:hover, .formulario button:hover {
+  color: #ccb979;
+  background-color: #C7289F;
 }
 
 .imagenes-fondo {
@@ -578,75 +595,9 @@ footer .copy {
   padding-top: 5rem;
 }
 
-.fondo-formulario {
-  background-color: #000000;
-  padding: 5rem 0;
-}
-.fondo-formulario .formulario {
-  background-image: url("../images/fondo-contacto.gif");
-  background-position-y: bottom;
-  background-position-x: center;
-  width: 120rem;
-  height: 50rem;
-  padding: 0 3rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.fondo-formulario .formulario form .casilleros__arriba {
-  background-color: rgba(19, 138, 61, 0);
-  font-size: 2.5rem;
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: rgba(238, 238, 238, 0.9333333333);
-  background-clip: padding-box;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.fondo-formulario .formulario form .casillero__abajo {
-  background-color: rgba(19, 138, 61, 0);
-  font-size: 2rem;
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: rgba(238, 238, 238, 0.9333333333);
-  background-clip: padding-box;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.fondo-formulario .formulario form .formulario--flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.fondo-formulario .formulario label {
-  font-size: 2.5rem;
-  color: rgba(238, 238, 238, 0.9333333333);
-  text-transform: uppercase;
-}
-.fondo-formulario .formulario button {
-  font-size: 3rem;
-  background-color: rgba(175, 175, 175, 0.9333333333);
-}
-.fondo-formulario .formulario .form--input input::placeholder {
-  color: #C7289F;
-}
-.fondo-formulario .formulario input:-webkit-autofill {
-  -webkit-text-fill-color: rgba(238, 238, 238, 0.9333333333);
-  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
-  transition: background-color 5000s ease-in-out 0s;
+.formulario {
+  margin-top: 0;
+  padding-top: 5rem;
 }
 
 .contact-me__info {
@@ -685,7 +636,7 @@ footer .copy {
   justify-content: right;
   align-items: flex-start;
   text-align: right;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 .info .contact-me-texto p,
 .info .email {
@@ -749,6 +700,7 @@ footer .copy {
 @media only screen and (max-width: 992px) {
   .whatsapp-icon {
     padding-right: 1.5rem;
+    animation: none;
   }
   .whatsapp-icon a {
     font-size: 5rem;
@@ -802,24 +754,11 @@ footer .copy {
     border-radius: 3%;
     border: rgba(238, 238, 238, 0.9333333333) solid 0.5rem;
   }
-  .formulario2 form {
+  .formulario2 form, .formulario form {
     text-align: center;
     padding: 0 1rem;
   }
-  .formulario2 .formulario--flex {
-    display: inline-block;
-  }
-  .fondo-formulario {
-    padding: 0;
-  }
-  .fondo-formulario .formulario {
-    height: 80rem;
-    text-align: center;
-  }
-  .fondo-formulario .formulario form {
-    padding: 0 1rem;
-  }
-  .fondo-formulario .formulario form .formulario--flex {
+  .formulario2 .formulario--flex, .formulario .formulario--flex {
     display: inline-block;
   }
 }
@@ -892,12 +831,6 @@ footer .copy {
   }
   .spotify-list iframe {
     width: 75%;
-  }
-  .fondo-formulario {
-    padding: 0;
-  }
-  .fondo-formulario .formulario {
-    height: 68rem;
   }
   .imagenes-fondo {
     height: 13rem;

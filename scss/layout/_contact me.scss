@@ -14,79 +14,10 @@
   }
 }
 
-.fondo-formulario{
-  background-color: #000000;
-  padding: 5rem 0;
 .formulario {
-  background-image: url("../images/fondo-contacto.gif");
-  background-position-y: bottom;
-  background-position-x: center;
-  width: 120rem;
-  height: 50rem;
-  padding: 0 3rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  @include flexbox (row, center, center);
-
-  form {
-
-      .casilleros__arriba {
-          background-color: #138a3d00;
-          font-size: 2.5rem;
-          display: block;
-          width: 100%;
-          padding: 0.375rem 0.75rem;
-          font-weight: 400;
-          line-height: 1.5;
-          color: #eeee;
-          background-clip: padding-box;
-          border: var(--bs-border-width) solid var(--bs-border-color);
-          border-radius: var(--bs-border-radius);
-          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-      }
-
-      .casillero__abajo {
-          background-color: #138a3d00;
-          font-size: 2rem;
-          display: block;
-          width: 100%;
-          padding: 0.375rem 0.75rem;
-          font-weight: 400;
-          line-height: 1.5;
-          color: #eeee;
-          background-clip: padding-box;
-          border: var(--bs-border-width) solid var(--bs-border-color);
-          border-radius: var(--bs-border-radius);
-          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-      }
-
-      .formulario--flex {
-          @include flexbox (row, space-between, center);
-      }
-  }
-
-  label {
-      font-size: 2.5rem;
-      color: #eeee;
-      text-transform: uppercase;
-  }
-
-  button {
-      font-size: 3rem;
-      background-color: #afafafee;
-  }
-
-  .form--input input::placeholder {
-      color: $main-color;
-  }
-
-  input:-webkit-autofill {
-      -webkit-text-fill-color: #eeee;
-      -webkit-box-shadow: 0 0 0px 1000px #00000000 inset;
-      transition: background-color 5000s ease-in-out 0s;
-    }
-  }
+  @extend .formulario2;
+  margin-top: 0;  
+  padding-top: 5rem;
 }
 
 .contact-me__info {
@@ -129,7 +60,7 @@
   @include flexbox (row, right, flex-start);
 
   text-align: right;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 
   .contact-me-texto p,
   .email {

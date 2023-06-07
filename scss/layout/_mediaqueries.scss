@@ -71,6 +71,7 @@
 
     .whatsapp-icon {
         padding-right: 1.5rem;
+        animation: none;
         a {
             font-size: 5rem;
         }
@@ -154,20 +155,6 @@
         }
     }
 
-    .fondo-formulario{
-        padding: 0;
-    .formulario {
-        height: 80rem;
-        text-align: center;
-
-        form {
-            padding: 0 1rem;
-            .formulario--flex {
-            display: inline-block;
-            }
-        }
-    }
-}
 }
 
 
@@ -267,12 +254,6 @@
         width: 75%;
     }
 
-    .fondo-formulario{
-        padding: 0;
-    .formulario {
-        height: 68rem;
-    }
-}
 
     .imagenes-fondo {
         height: 13rem;
