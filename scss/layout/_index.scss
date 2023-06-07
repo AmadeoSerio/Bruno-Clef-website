@@ -1,6 +1,6 @@
 /** SECCION 1 PORTADA **/
 .portada {
-    background: linear-gradient(to top, #000000be, #00000000), url("../images/portada-bruno.jpg");
+    background: linear-gradient(to top, #000000be, #00000000), url("../images/portada-bruno.webp");
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 
 /** SECCION 2 SOBRE MI **/
 .about-me {
-    background-image: url("../images/guitarra.jpg");
+    background-image: url("../images/guitarra.webp");
     width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -224,7 +224,8 @@
     }
 
     .casilleros__arriba2 {
-        background-color: #682368;
+        background-color:#7920ff;
+        background-image: $gradiente;
         font-size: 2.5rem;
         display: block;
         width: 100%;
@@ -239,7 +240,8 @@
     }
 
     .casillero__abajo2 {
-        background-color: #682368;
+        background-color:#7920ff;
+        background-image: $gradiente;
         font-size: 2rem;
         display: block;
         width: 100%;
