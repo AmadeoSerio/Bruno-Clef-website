@@ -1,5 +1,5 @@
 .imagenes-fondo {
-  background-image: url("../images/fondo pag.png");
+  background-image: url("../images/fondo-pag.png");
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -14,70 +14,78 @@
   }
 }
 
+.formulario {
+  background-image: url("../images/fondo-contacto.gif");
+  background-position-y: bottom;
+  background-position-x: center;
+  width: 100%;
+  height: 65rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include flexbox (row, center, center);
 
-.formulario2 {
-  margin-top: 3rem;
+  form {
 
-  .form--input2 input::placeholder {
-    color: #eeee;
-  }
+      .casilleros__arriba {
+          background-color: #138a3d00;
+          font-size: 2.5rem;
+          display: block;
+          width: 100%;
+          padding: 0.375rem 0.75rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #eeee;
+          background-clip: padding-box;
+          border: var(--bs-border-width) solid var(--bs-border-color);
+          border-radius: var(--bs-border-radius);
+          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      }
 
-  .formulario--darktext input:-webkit-autofill {
-    -webkit-text-fill-color: #eeee;
-    -webkit-box-shadow: 0 0 0px 1000px #00000000 inset;
-    transition: background-color 5000s ease-in-out 0s;
+      .casillero__abajo {
+          background-color: #138a3d00;
+          font-size: 2rem;
+          display: block;
+          width: 100%;
+          padding: 0.375rem 0.75rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #eeee;
+          background-clip: padding-box;
+          border: var(--bs-border-width) solid var(--bs-border-color);
+          border-radius: var(--bs-border-radius);
+          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      }
+
+      .formulario--flex {
+          @include flexbox (row, space-between, center);
+      }
   }
 
   label {
-    font-size: 2.5rem;
-    color: #eeee;
-    text-transform: uppercase;
-  }
-
-  .casilleros__arriba2 {
-    background-color: #682368;
-    font-size: 2.5rem;
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #eeee;
-    background-clip: padding-box;
-    border: var(--bs-border-width) solid var(--bs-border-color);
-    border-radius: var(--bs-border-radius);
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  }
-
-  .casillero__abajo2 {
-    background-color: #682368;
-    font-size: 2rem;
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #eeee;
-    background-clip: padding-box;
-    border: var(--bs-border-width) solid var(--bs-border-color);
-    border-radius: var(--bs-border-radius);
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  }
-
-  .formulario--flex {
-    display: flex;
-    justify-content: space-between;
+      font-size: 2.5rem;
+      color: #eeee;
+      text-transform: uppercase;
   }
 
   button {
-    font-size: 3rem;
-    background-color: #afafafee;
+      font-size: 3rem;
+      background-color: #afafafee;
+  }
+
+  .form--input input::placeholder {
+      color: $main-color;
+  }
+
+  input:-webkit-autofill {
+      -webkit-text-fill-color: #eeee;
+      -webkit-box-shadow: 0 0 0px 1000px #00000000 inset;
+      transition: background-color 5000s ease-in-out 0s;
   }
 }
 
-
 .contact-me__info {
-  margin-top: 10rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
 
@@ -86,7 +94,7 @@
     justify-content: left;
 
     div p {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       color: $secundary-color;
     }
   }
@@ -112,7 +120,6 @@
   }
 }
 
-
 .info {
   @include flexbox (row, right, flex-start);
 
@@ -121,7 +128,7 @@
 
   .contact-me-texto p,
   .email {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: $secundary-color;
   }
 }

@@ -29,6 +29,21 @@ p {
   color: #ccb979;
 }
 
+.whatsapp-icon {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  padding-right: 2rem;
+}
+.whatsapp-icon a {
+  color: #33cc66;
+  font-size: 7rem;
+  transition: 0.5s;
+}
+.whatsapp-icon a:hover {
+  color: #C7289F;
+}
+
 @keyframes titulo-animado {
   0% {
     transform: translateY(20vh);
@@ -287,7 +302,7 @@ footer .copy {
 
 /** SECCION 4 PROYECTOS **/
 .fondo-proyectos {
-  background-color: #161515;
+  background-color: #131313;
   text-align: center;
   padding-bottom: 12rem;
 }
@@ -337,7 +352,7 @@ footer .copy {
   align-items: center;
   justify-items: center;
   place-items: center;
-  padding: 1.5rem 5% 15rem 5%;
+  padding: 1.5rem 5% 5rem 5%;
 }
 .galeria .foto1 {
   grid-area: area1;
@@ -387,24 +402,193 @@ footer .copy {
 }
 
 /** SECCION 6 CONTACTO **/
-.formulario {
-  background-image: url("../images/fondo contacto.gif");
+.formulario2 {
+  margin-top: 3rem;
+  background-color: #131313;
+}
+.formulario2 h6 {
+  color: transparent;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #6600ff, #ff33cc);
+  padding: 5rem 0;
+}
+.formulario2 .form--input2 input::placeholder {
+  color: rgba(238, 238, 238, 0.9333333333);
+}
+.formulario2 .formulario--darktext input:-webkit-autofill {
+  -webkit-text-fill-color: rgba(238, 238, 238, 0.9333333333);
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.formulario2 label {
+  font-size: 2.5rem;
+  color: rgba(238, 238, 238, 0.9333333333);
+  text-transform: uppercase;
+}
+.formulario2 .casilleros__arriba2 {
+  background-color: #682368;
+  font-size: 2.5rem;
+  display: block;
   width: 100%;
-  height: 63rem;
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(238, 238, 238, 0.9333333333);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.formulario2 .casillero__abajo2 {
+  background-color: #682368;
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(238, 238, 238, 0.9333333333);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.formulario2 .formulario--flex {
+  display: flex;
+  justify-content: space-between;
+}
+.formulario2 button {
+  font-size: 3rem;
+  background-color: rgba(175, 175, 175, 0.9333333333);
+  margin-bottom: 5rem;
+}
+
+.imagenes-fondo {
+  background-image: url("../images/fondo-pag.png");
+  width: 100%;
+  height: 20rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.formulario h6 {
+.imagenes-fondo h1 {
   color: rgba(238, 238, 238, 0.9333333333);
   font-size: 4rem;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0;
-  padding: 5rem 0;
+  letter-spacing: 0.5rem;
+  padding-top: 5rem;
 }
-.formulario form {
-  padding: 0 10rem;
+
+.imagen-meet-bruno {
+  padding: 2rem;
+  text-align: center;
+}
+.imagen-meet-bruno img {
+  width: auto;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.imagenes-fondo {
+  background-image: url("../images/fondo-pag.png");
+  width: 100%;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagenes-fondo h1 {
+  color: rgba(238, 238, 238, 0.9333333333);
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding-top: 5rem;
+}
+
+.spotify-list {
+  animation-name: iframe-animado;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  transform: translateX(0);
+}
+
+.imagenes-fondo {
+  background-image: url("../images/fondo-pag.png");
+  width: 100%;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagenes-fondo h1 {
+  color: rgba(238, 238, 238, 0.9333333333);
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding-top: 5rem;
+}
+
+.forza iframe {
+  height: 70vh;
+  border-radius: 4%;
+  border: rgba(238, 238, 238, 0.9333333333) solid 2px;
+}
+
+.imagenes-fondo {
+  background-image: url("../images/fondo-pag.png");
+  width: 100%;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagenes-fondo h1 {
+  color: rgba(238, 238, 238, 0.9333333333);
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding-top: 5rem;
+}
+
+.formulario {
+  background-image: url("../images/fondo-contacto.gif");
+  background-position-y: bottom;
+  background-position-x: center;
+  width: 100%;
+  height: 65rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .formulario form .casilleros__arriba {
   background-color: rgba(19, 138, 61, 0);
@@ -458,169 +642,8 @@ footer .copy {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-.imagenes-fondo {
-  background-image: url("../images/fondo pag.png");
-  width: 100%;
-  height: 20rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.imagenes-fondo h1 {
-  color: rgba(238, 238, 238, 0.9333333333);
-  font-size: 4rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  padding-top: 5rem;
-}
-
-.imagen-meet-bruno {
-  padding: 2rem;
-  text-align: center;
-}
-.imagen-meet-bruno img {
-  width: auto;
-  height: 70vh;
-  object-fit: cover;
-}
-
-.imagenes-fondo {
-  background-image: url("../images/fondo pag.png");
-  width: 100%;
-  height: 20rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.imagenes-fondo h1 {
-  color: rgba(238, 238, 238, 0.9333333333);
-  font-size: 4rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  padding-top: 5rem;
-}
-
-.spotify-list {
-  animation-name: iframe-animado;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-  transform: translateX(0);
-}
-
-.imagenes-fondo {
-  background-image: url("../images/fondo pag.png");
-  width: 100%;
-  height: 20rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.imagenes-fondo h1 {
-  color: rgba(238, 238, 238, 0.9333333333);
-  font-size: 4rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  padding-top: 5rem;
-}
-
-.forza iframe {
-  height: 70vh;
-  border-radius: 4%;
-  border: rgba(238, 238, 238, 0.9333333333) solid 2px;
-}
-
-.imagenes-fondo {
-  background-image: url("../images/fondo pag.png");
-  width: 100%;
-  height: 20rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.imagenes-fondo h1 {
-  color: rgba(238, 238, 238, 0.9333333333);
-  font-size: 4rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  padding-top: 5rem;
-}
-
-.formulario2 {
-  margin-top: 3rem;
-}
-.formulario2 .form--input2 input::placeholder {
-  color: rgba(238, 238, 238, 0.9333333333);
-}
-.formulario2 .formulario--darktext input:-webkit-autofill {
-  -webkit-text-fill-color: rgba(238, 238, 238, 0.9333333333);
-  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
-  transition: background-color 5000s ease-in-out 0s;
-}
-.formulario2 label {
-  font-size: 2.5rem;
-  color: rgba(238, 238, 238, 0.9333333333);
-  text-transform: uppercase;
-}
-.formulario2 .casilleros__arriba2 {
-  background-color: #682368;
-  font-size: 2.5rem;
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: rgba(238, 238, 238, 0.9333333333);
-  background-clip: padding-box;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.formulario2 .casillero__abajo2 {
-  background-color: #682368;
-  font-size: 2rem;
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: rgba(238, 238, 238, 0.9333333333);
-  background-clip: padding-box;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.formulario2 .formulario--flex {
-  display: flex;
-  justify-content: space-between;
-}
-.formulario2 button {
-  font-size: 3rem;
-  background-color: rgba(175, 175, 175, 0.9333333333);
-}
-
 .contact-me__info {
-  margin-top: 10rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
 }
@@ -629,7 +652,7 @@ footer .copy {
   justify-content: left;
 }
 .contact-me__info .contact-me-redes div p {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #ccb979;
 }
 .contact-me__info .contacto__redes {
@@ -659,7 +682,7 @@ footer .copy {
 }
 .info .contact-me-texto p,
 .info .email {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #ccb979;
 }
 
@@ -717,6 +740,12 @@ footer .copy {
   }
 }
 @media only screen and (max-width: 992px) {
+  .whatsapp-icon {
+    padding-right: 1.5rem;
+  }
+  .whatsapp-icon a {
+    font-size: 5rem;
+  }
   .navbar {
     height: 5.3rem;
   }
