@@ -37,13 +37,14 @@ p {
     padding-right: 2rem;
 
     animation: logo-whatsapp 3s infinite linear;
-    
-    a {color: #33cc66;
-    font-size: 7rem;
-    transition: .5s;
 
-    &:hover {
-        color: $main-color;
+    a {
+        color: #33cc66;
+        font-size: 7rem;
+        transition: .5s;
+
+        &:hover {
+            color: $main-color;
+        }
     }
-  }
-  }
+}

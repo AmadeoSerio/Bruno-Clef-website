@@ -51,8 +51,6 @@
     }
 
 
-
-
     .bruno {
         font-weight: bold;
         float: none;
@@ -74,6 +72,10 @@
         }
     }
 
+    .navbar-toggler {
+        color: #eeee;
+        border-color: #eeee;
+    }
 
 
 
@@ -98,52 +100,52 @@
 
             ul {
 
-            .fa-brands {
-                font-size: 3.3rem;
-                margin-top: 1rem;
-                transition: .5s;
-            }
+                .fa-brands {
+                    font-size: 3.3rem;
+                    margin-top: 1rem;
+                    transition: .5s;
+                }
 
-            .fa-facebook {
-                color: #2c86d4;
-            }
+                .fa-facebook {
+                    color: #2c86d4;
+                }
 
-            .fa-instagram {
-                color: #e4405f;
-            }
+                .fa-instagram {
+                    color: #e4405f;
+                }
 
-            .fa-spotify {
-                color: #51A67B;
-            }
+                .fa-spotify {
+                    color: #51A67B;
+                }
 
-            .fa-youtube {
-                color: #861f1c;
-            }
+                .fa-youtube {
+                    color: #861f1c;
+                }
 
-            .fa-tiktok {
-                color: #eeee;
-            }
+                .fa-tiktok {
+                    color: #eeee;
+                }
 
-            .fa-facebook:hover {
-                transform: translateY(3px) scale(1.3);
-            }
+                .fa-facebook:hover {
+                    transform: translateY(3px) scale(1.3);
+                }
 
-            .fa-instagram:hover {
-                transform: translateY(3px) scale(1.3);
-            }
+                .fa-instagram:hover {
+                    transform: translateY(3px) scale(1.3);
+                }
 
-            .fa-spotify:hover {
-                transform: translateY(3px) scale(1.3);
-            }
+                .fa-spotify:hover {
+                    transform: translateY(3px) scale(1.3);
+                }
 
-            .fa-youtube:hover {
-                transform: translateY(3px) scale(1.3);
-            }
+                .fa-youtube:hover {
+                    transform: translateY(3px) scale(1.3);
+                }
 
-            .fa-tiktok:hover {
-                transform: translateY(3px) scale(1.3);
+                .fa-tiktok:hover {
+                    transform: translateY(3px) scale(1.3);
+                }
             }
-        }
 
         }
 

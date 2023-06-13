@@ -136,6 +136,10 @@ p {
 .navbar .bruno:active {
   color: #ccb979;
 }
+.navbar .navbar-toggler {
+  color: rgba(238, 238, 238, 0.9333333333);
+  border-color: rgba(238, 238, 238, 0.9333333333);
+}
 .navbar .offcanvas {
   background-color: #191919;
   border: 0;
