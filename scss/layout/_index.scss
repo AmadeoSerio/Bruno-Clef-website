@@ -8,26 +8,29 @@
     background-position-x: center;
     background-size: cover;
 
-    h1 {
+    div{
         height: 100vh;
-
         @include flexbox (column, end, center);
-        font-weight: bolder;
-
-        @include titulos (transparent, 11rem, center, uppercase, 0);
-        background: linear-gradient(to left, #7920ff, #ff33cc);
-        background-clip: text;
-        -webkit-background-clip: text;
-
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 20rem;
-
         animation-name: titulo-animado;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
         animation-duration: 1s;
         transform: translateY(0);
+    }
+
+    h1 {
+        font-weight: bolder;
+
+        @include titulos (transparent, 11rem, center, uppercase, 0);
+        background: linear-gradient(to left, #FF21AF, #21F4FF);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    p{
+        color: $main-color;
     }
 }
 
@@ -52,7 +55,7 @@
 
     p {
         font-size: 3rem;
-        text-align: center;
+        text-align: left;
         padding-right: 10%;
         padding-left: 10%;
         font-weight: bold;
@@ -63,21 +66,22 @@
 
 /** SECCION 3 MUSICA **/
 .my-music {
-    @include titulos (transparent, 4rem, center, uppercase, 0.5rem);
+    @include titulos (transparent, 2rem, center, uppercase, 0.5rem);
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: $gradiente;
+    // background-image: $gradiente;
+    color: $main-color;
     padding: 5rem 0;
 }
 
 .spotify-list {
     @include flexbox (column, center, center);
 
-    iframe {
-        padding-bottom: 5rem;
-        width: 30%;
-        height: 65.5rem;
+    .fa-calendar{
+        font-size: 10rem;
+        color: $main-color;
     }
+    
 }
 
 
@@ -207,68 +211,5 @@
         padding: 5rem 0;
     }
 
-    .form--input2 input::placeholder {
-        color: #eeee;
-    }
-
-    .formulario--darktext input:-webkit-autofill {
-        -webkit-text-fill-color: #eeee;
-        -webkit-box-shadow: 0 0 0px 1000px #00000000 inset;
-        transition: background-color 5000s ease-in-out 0s;
-    }
-
-    label {
-        font-size: 2.5rem;
-        color: #eeee;
-        text-transform: uppercase;
-    }
-
-    .casilleros__arriba2 {
-        background-color: #7920ff;
-        background-image: $gradiente;
-        font-size: 2.5rem;
-        display: block;
-        width: 100%;
-        padding: 0.375rem 0.75rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #eeee;
-        background-clip: padding-box;
-        border: var(--bs-border-width) solid var(--bs-border-color);
-        border-radius: var(--bs-border-radius);
-        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    }
-
-    .casillero__abajo2 {
-        background-color: #7920ff;
-        background-image: $gradiente;
-        font-size: 2rem;
-        display: block;
-        width: 100%;
-        padding: 0.375rem 0.75rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #eeee;
-        background-clip: padding-box;
-        border: var(--bs-border-width) solid var(--bs-border-color);
-        border-radius: var(--bs-border-radius);
-        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    }
-
-    .formulario--flex {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    button {
-        font-size: 3rem;
-        background-color: #ff33cc;
-        margin-bottom: 5rem;
-        transition: .3s;
-
-        &:hover {
-            color: $secundary-color;
-            background-color: $main-color;
-        }
-    }
+    padding-bottom: 10rem;
 }
