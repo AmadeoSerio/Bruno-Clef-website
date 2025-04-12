@@ -245,7 +245,7 @@ footer .copy {
 .portada h1 {
   font-weight: bolder;
   color: transparent;
-  font-size: 11rem;
+  font-size: 20rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0;
@@ -305,10 +305,30 @@ footer .copy {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
+}
+.spotify-list .fa-calendar, .spotify-list .fa-phone {
+  font-size: 4rem;
+  color: rgb(10, 10, 10);
 }
 .spotify-list .fa-calendar {
-  font-size: 10rem;
-  color: #FFDF21;
+  padding-right: 1.2rem;
+}
+.spotify-list .fa-phone {
+  padding-left: 1.2rem;
+}
+.spotify-list .boton-calendario {
+  width: 18rem;
+  border: none;
+  border-radius: 5rem;
+  padding: 1rem;
+  background-color: #FFDF21;
+  box-shadow: 5px 5px 30px rgba(33, 244, 255, 0.5019607843);
+  transition: 0.5s;
+}
+.spotify-list .boton-calendario:hover {
+  box-shadow: -5px -5px 30px rgba(255, 33, 174, 0.7882352941);
+  width: 17rem;
 }
 
 /** SECCION 4 PROYECTOS **/
@@ -413,12 +433,12 @@ footer .copy {
 }
 
 /** SECCION 6 CONTACTO **/
-.formulario2, .formulario {
+.formulario2 {
   margin-top: 3rem;
   background-color: #131313;
   padding-bottom: 10rem;
 }
-.formulario2 h6, .formulario h6 {
+.formulario2 h6 {
   color: transparent;
   font-size: 4rem;
   text-align: center;
@@ -459,76 +479,6 @@ footer .copy {
   transform: translateX(0);
 }
 
-.imagenes-fondo {
-  background-image: url("../images/fondo-pag.webp");
-  width: 100%;
-  height: 20rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.imagenes-fondo h1 {
-  color: rgba(238, 238, 238, 0.9333333333);
-  font-size: 4rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  padding-top: 5rem;
-}
-
-.formulario {
-  margin-top: 0;
-  padding-top: 5rem;
-}
-
-.contact-me__info {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-}
-.contact-me__info .contact-me-redes {
-  display: flex;
-  justify-content: left;
-}
-.contact-me__info .contact-me-redes div p {
-  font-size: 2.5rem;
-  color: #ccb979;
-}
-.contact-me__info .contacto__redes {
-  list-style: none;
-  margin-left: -3.5rem;
-}
-.contact-me__info .contacto__redes li {
-  display: inline-block;
-  padding: 0 2rem;
-}
-.contact-me__info .contacto__redes li a {
-  color: rgba(238, 238, 238, 0.9333333333);
-  font-size: 3rem;
-  transition: 0.3s;
-}
-.contact-me__info .contacto__redes li a:hover {
-  color: #FFDF21;
-}
-
-.info {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: flex-start;
-  text-align: right;
-  margin-bottom: 2rem;
-}
-.info .contact-me-texto p,
-.info .email {
-  font-size: 2.5rem;
-  color: #ccb979;
-}
-
 @media only screen and (max-width: 1399px) {
   .navbar {
     height: 6rem;
@@ -539,7 +489,10 @@ footer .copy {
 }
 @media only screen and (max-width: 1281px) {
   .portada h1 {
-    font-size: 8rem;
+    font-size: 15rem;
+  }
+  .portada .texto-presentacion {
+    text-align: center;
   }
   .imagenes-fondo {
     height: 15rem;
@@ -588,6 +541,15 @@ footer .copy {
   }
   .whatsapp-icon a {
     font-size: 5rem;
+  }
+  .my-music {
+    font-size: 1.7rem;
+  }
+  .boton-calendario {
+    width: 12rem;
+  }
+  .boton-calendario .fa-calendar, .boton-calendario .fa-phone {
+    font-size: 2.5rem;
   }
   .navbar {
     height: 5.3rem;
@@ -638,11 +600,11 @@ footer .copy {
     border-radius: 3%;
     border: rgba(238, 238, 238, 0.9333333333) solid 0.5rem;
   }
-  .formulario2 form, .formulario form {
+  .formulario2 form {
     text-align: center;
     padding: 0 1rem;
   }
-  .formulario2 .formulario--flex, .formulario .formulario--flex {
+  .formulario2 .formulario--flex {
     display: inline-block;
   }
 }
@@ -686,7 +648,9 @@ footer .copy {
   }
   .portada h1 {
     font-size: 5rem;
-    padding-bottom: 8rem;
+  }
+  .portada .texto-presentacion {
+    font-size: 1.8rem;
   }
   .about-me {
     padding: 5rem 0;
@@ -696,7 +660,7 @@ footer .copy {
     padding: 0 2rem;
   }
   .fondo-proyectos {
-    padding-bottom: 9rem;
+    padding-bottom: 1rem;
   }
   .fondo-proyectos .proyects {
     padding: 3rem 0;
@@ -712,9 +676,6 @@ footer .copy {
   }
   .galeria .galeria__foto {
     margin-bottom: 2rem;
-  }
-  .spotify-list iframe {
-    width: 75%;
   }
   .imagenes-fondo {
     height: 13rem;

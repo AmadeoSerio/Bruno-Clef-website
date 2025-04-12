@@ -24,7 +24,7 @@
     h1 {
         font-weight: bolder;
 
-        @include titulos (transparent, 11rem, center, uppercase, 0);
+        @include titulos (transparent, 20rem, center, uppercase, 0);
         background: linear-gradient(to left, #FF21AF, #21F4FF);
         background-clip: text;
         -webkit-background-clip: text;
@@ -76,12 +76,34 @@
 
 .spotify-list {
     @include flexbox (column, center, center);
+    padding-bottom: 3rem;
+
+    .fa-calendar, .fa-phone{
+        font-size: 4rem;
+        color: rgb(10, 10, 10);
+    }
 
     .fa-calendar{
-        font-size: 10rem;
-        color: $main-color;
+        padding-right: 1.2rem;
     }
-    
+
+    .fa-phone{
+        padding-left: 1.2rem;
+    }
+
+    .boton-calendario{
+        width: 18rem;
+        border: none;
+        border-radius: 5rem;
+        padding: 1rem;
+        background-color: $main-color;
+        box-shadow:  5px 5px 30px #21f4ff80;    
+        transition: .5s;
+    }
+    .boton-calendario:hover{
+        box-shadow:  -5px -5px 30px  #ff21aec9; 
+        width: 17rem;
+    }
 }
 
 

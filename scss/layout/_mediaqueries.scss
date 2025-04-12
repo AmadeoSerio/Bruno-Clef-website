@@ -12,7 +12,13 @@
 @media only screen and (max-width:1281px) {
 
     .portada h1 {
-        font-size: 8rem;
+        font-size: 15rem;
+    }
+
+    .portada {
+        .texto-presentacion{
+            text-align: center;
+        }
     }
 
     .imagenes-fondo {
@@ -74,6 +80,18 @@
 
         a {
             font-size: 5rem;
+        }
+    }
+
+    .my-music{
+        font-size: 1.7rem;
+    }
+
+    .boton-calendario{
+        width: 12rem;
+        
+        .fa-calendar , .fa-phone {
+            font-size: 2.5rem;
         }
     }
 
@@ -212,7 +230,10 @@
 
         h1 {
             font-size: 5rem;
-            padding-bottom: 8rem;
+        }
+
+        .texto-presentacion{
+            font-size: 1.8rem;
         }
     }
 
@@ -227,7 +248,7 @@
 
 
     .fondo-proyectos {
-        padding-bottom: 9rem;
+        padding-bottom: 1rem;
 
         .proyects {
             padding: 3rem 0;
@@ -251,9 +272,7 @@
     }
 
 
-    .spotify-list iframe {
-        width: 75%;
-    }
+
 
 
     .imagenes-fondo {
