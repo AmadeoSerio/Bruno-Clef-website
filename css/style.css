@@ -297,7 +297,7 @@ footer .copy {
   background-clip: text;
   -webkit-background-clip: text;
   color: #FFDF21;
-  padding: 5rem 0;
+  padding-top: 5rem;
 }
 
 .spotify-list {
@@ -305,7 +305,8 @@ footer .copy {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
+  margin-top: -2rem;
 }
 .spotify-list .fa-calendar, .spotify-list .fa-phone {
   font-size: 4rem;
@@ -523,6 +524,9 @@ footer .copy {
   }
 }
 @media only screen and (max-width: 992px) {
+  .spotify-list {
+    margin-top: -6rem;
+  }
   .whatsapp-icon {
     padding-right: 1.5rem;
     animation: none;
@@ -533,10 +537,10 @@ footer .copy {
   .my-music {
     font-size: 1.7rem;
   }
-  .boton-calendario {
-    width: 12rem;
+  .spotify-list .boton-calendario {
+    width: 14rem;
   }
-  .boton-calendario .fa-calendar, .boton-calendario .fa-phone {
+  .spotify-list .boton-calendario .fa-calendar, .spotify-list .boton-calendario .fa-phone {
     font-size: 2.5rem;
   }
   .navbar {

@@ -71,12 +71,13 @@
     -webkit-background-clip: text;
     // background-image: $gradiente;
     color: $main-color;
-    padding: 5rem 0;
+    padding-top: 5rem;
 }
 
 .spotify-list {
     @include flexbox (column, center, center);
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
+    margin-top: -2rem;
 
     .fa-calendar, .fa-phone{
         font-size: 4rem;

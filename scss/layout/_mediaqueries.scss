@@ -81,6 +81,11 @@
 
 @media only screen and (max-width:992px) {
 
+    .spotify-list {
+        margin-top: -6rem;
+    }
+
+
     .whatsapp-icon {
         padding-right: 1.5rem;
         animation: none;
@@ -94,13 +99,16 @@
         font-size: 1.7rem;
     }
 
+    .spotify-list{
+
     .boton-calendario{
-        width: 12rem;
+        width: 14rem;
         
         .fa-calendar , .fa-phone {
             font-size: 2.5rem;
         }
     }
+}
 
     .navbar {
         height: 5.3rem;
